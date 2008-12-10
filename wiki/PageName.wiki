@@ -1,0 +1,24 @@
+#summary What BULOS is and Why it is.
+
+= Introduction =
+
+Welcome to BULOS, here is (in part) a history as well as what BULOS encompasses.
+
+
+= Details =
+
+A long time ago when virtualisation technology took off, it had always occured to me that being able to package up some form of service that would be easily transportable between servers. Of course, originally it was all just VMWare and there weren't many options so I didn't think long and hard about it. Some time later QEMU came out and my interest was once again raised, I had been working on iSCSI office and realised what I was doing with it would be more suited to some for of service-based offering. But that was several years ago.
+
+Cloud computing and utility computing started to ramp up and I again turned back to my little project with some more enthusiasm. Xen took off, and then KVM became available, both those projects resulted in me thinking "you could compact an entire OS running a web server capable of controlling lots of KVM/Xen instances into about 200mb quite easily", and thus the beginnings of BULOS were born.
+
+Going back to iSCSI office, I had a project that would pull apart parts of a distribution in order to repackage it for iSCSI. I also (in creating my hypervisor manager) didn't want to have to write and maintain my own base OS (not even a small one) because thats a job unto itself. So my desktop machine was running fedora and I wrote a little script that would grab the files from my desktop distro (given a bunch of package names) and create a kernel/initrd from them.
+
+Later this expanded massively when I realised the path I was going down. It started out being able to pull packages from repositories or from a CDROM/file system, unpack them, clean off some files I didn't need, then create the OS. Some time passed and I realised that a shell script was never going to cut it and I moved the entire thing to a c++ codebase running with a KDE gui. It was during that time I had alot of idea's as to what a bulos OS would be and what BULOS itself could achieve.
+
+So I wrote a tool that did what I had originally intended, take a bunch of package names, tie it to a distribution, add some code to remove files we didnt need from the original packages, add a set of "startup" code and away we went. I was building utility OS's fairly simply.
+
+Move forward about a year and it became clear that what I really needed to provide was a way of controlling any number of BULOS created utility computers running a single utility. So BULOS is now web based, and while the architecture of the control mechanisms have remained fixed the implementation has changed somewhat to reflect what I'm trying to achieve. Thus the BULOS API was born, a base set of code providing a web page and soap service which is able to be extended to control just about anything.
+
+To me this means providing a way to build utility OS's that allow anyone to create their own utility and publish it with in their own infrastructure. For example, I might create a web server utility based on Fedora 9, write some code (extending BULOS API that controls it) and push it off somewhere. It will boot into about 200mb of ram, and away I go.
+
+Sound simple? It is, and in my humble opinion that's exactly what utility computing should be about, simplicity.
