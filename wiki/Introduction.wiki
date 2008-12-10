@@ -7,7 +7,7 @@ Welcome to BULOS, here is (in part) a history as well as what BULOS encompasses.
 
 = Details =
 
-A long time ago when virtualisation technology took off, it had always occured to me that being able to package up some form of service that would be easily transportable between servers. Of course, originally it was all just VMWare and there weren't many options so I didn't think long and hard about it. Some time later QEMU came out and my interest was once again raised, I had been working on iSCSI office and realised what I was doing with it would be more suited to some for of service-based offering. But that was several years ago.
+A long time ago when virtualisation technology took off, it had always occured to me that being able to package up some form of service that would be easily transportable between servers. Of course, originally it was all just VMWare and there weren't many options so I didn't think long and hard about it. Some time later QEMU came out and my interest was once again raised, I had been working on iSCSI office and realised what I was doing with it would be more suited to some form of service-based offering. But that was several years ago.
 
 Cloud computing and utility computing started to ramp up and I again turned back to my little project with some more enthusiasm. Xen took off, and then KVM became available, both those projects resulted in me thinking "you could compact an entire OS running a web server capable of controlling lots of KVM/Xen instances into about 200mb quite easily", and thus the beginnings of BULOS were born.
 
