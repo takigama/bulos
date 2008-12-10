@@ -33,4 +33,4 @@ Keep in mind, that also means that if your "utility" requires some binary packag
 
 How does this affect people using the utility? Well, if you were to use a utility to provide file sharing (cifs for example) to users on your network your not required to provide the source code for that software, your not distributing samba to them, your providing them a service (much the same as you would if you installed a linux machine and let them have access to it). In reality the utility may be based off fedora and so getting the source is easy enough, but not a requirement in that instance under the GPL (as I understand it).
 
-All this means that a "utility" OS may only be in the order of kilobytes rather then megabytes or gigabytes, and that makes distribution EASY!
+All this means that a "utility" OS (in its distributable form) may only be in the order of kilobytes rather then megabytes or gigabytes, and that makes distribution EASY!
