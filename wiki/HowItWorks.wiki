@@ -15,4 +15,4 @@ The builder attempts to give you an IDE-style way of createing the OS itself, wh
   * extend the BULOS API to control your utility and add it to the project.
   * Click Build
 
-And away you go, that 
+And away you go, that pretty much describes how you would build an OS, but stay tuned for more info because there is alot more coming.
